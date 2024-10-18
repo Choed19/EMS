@@ -1,0 +1,309 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+body,
+html {
+
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 100%;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background: url('img/NatureGIF.gif') no-repeat center center; */
+    background-size: cover;
+    margin: auto;
+}
+
+
+.header {
+    position: fixed;
+    /* border: 2px rgb(15, 14, 14) solid; */
+    transition: margin-left 0.5s ease;
+    /* border-bottom: 1px rgb(15, 15, 15) solid; */
+    background-color: rgb(83, 82, 82);
+    display: flex;
+    top: 0;
+    /* ติดด้านบนของหน้าจอ */
+    left: 0;
+    /* ติดด้านซ้ายของหน้าจอ */
+    width: 100%;
+    /* ให้ header กว้างเต็มหน้าจอ */
+    z-index: 1000;
+    transition: margin-left 0.5s ease;
+}
+
+.header.open {
+    margin-left: 270px;
+    /* เลื่อน header ไปทางขวาเมื่อ sidebar เปิด */
+}
+
+.togglebtn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.togglebtn:hover {
+    background-color: #444;
+}
+
+.main-sidebar {
+    position: fixed;
+    transition: width 0.5s;
+    overflow-y: auto;
+    /* ทำให้ sidebar ติดขอบซ้าย */
+    height: 100%;
+    /* ให้สูงเต็มความสูงของหน้าจอ */
+    background-color: #343a40;
+    /* สีพื้นหลังของ sidebar */
+ 
+    z-index: 1000;
+    width: 0;
+    /* ทำให้ sidebar อยู่เหนือเนื้อหาอื่น */
+    top: 0;
+    /* ติดด้านบนของหน้าจอ */
+    left: 0;
+
+
+}
+
+.brand {
+
+    width: 240px;
+    height: 59px;
+    color: #5cffb3;
+    font-size: 20000px;
+}
+
+.brand button {
+    display: none;
+}
+
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+    /* border: 1px red solid; */
+}
+
+.main-container {
+
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    /* สีพื้นหลังเป็นสีขาว */
+    width: auto;
+    /* ให้กว้างเต็มจอ */
+    min-height: 100vh;
+    /* ความสูงเต็มหน้าจอ */
+    padding: 40px 10px 20px 10px;
+
+    /* ปรับขนาด padding ตามที่ต้องการ */
+    /* ลบ transition ที่เกี่ยวข้องกับ margin-left */
+    transition: none;
+}
+
+
+
+/* เมื่อ sidebar เปิด */
+.main-sidebar.open {
+    width: 270px;
+}
+
+
+
+#logout {
+    color: #faf1f1
+}
+
+
+
+.user-panel {
+
+    height: 100px;
+    margin-bottom: 20px;
+    border: #000000 1px solid;
+    margin: 5px;
+    background: linear-gradient(45deg, #204dc9, #76f1dd);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    /* แนวตั้งกลาง */
+    justify-content: space-between;
+    padding: 10px;
+    /* เพิ่ม padding เพื่อลดการล้นของเนื้อหาภายใน */
+    box-sizing: border-box;
+    /* ใช้ box-sizing เพื่อนับ padding เข้าในขนาด */
+    overflow: hidden;
+    /* ซ่อนเนื้อหาที่ล้นออกมา */
+    z-index: 500;
+    
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.user-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item {
+    position: absolute;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* ทำให้ .item กว้างเต็มที่แต่ไม่เกินขอบของ .user-panel */
+    max-width: 100%;
+    /* จำกัดความกว้างไม่ให้เกินขอบ */
+    padding: 0 10px;
+    /* เพิ่ม padding ให้ภายใน .item */
+    box-sizing: border-box;
+    /* ใช้ box-sizing เพื่อนับ padding เข้าในขนาด */
+}
+
+
+
+#edit {
+
+    display: flex;
+    align-items: center;
+    /* แนวตั้งกลาง */
+    justify-content: center;
+    /* แนวนอนกลาง */
+    height: auto;
+    width: auto;
+
+
+}
+
+#edit:hover {
+    background: none;
+
+
+}
+
+.image-circle {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+#name {
+    color: #0f0f0f;
+    text-decoration: none;
+    text-align: center;
+
+
+
+
+}
+
+.nav-link {
+    color: #faf1f1
+}
+
+.fa {
+    color: #111;
+
+}
+
+/* for mobile  */
+@media only screen and (max-width: 480px) {
+    body {
+        max-width: 480px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .main-sidebar {
+        position: fixed;
+        top: -100%;
+        /* เริ่มต้นซ่อนไว้ด้านบน */
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        /* ให้ sidebar เต็มหน้าจอในแนวนอน */
+        height: auto;
+        /* ให้บังเนื้อหาทั้งหมด */
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        transition: top 0.5s ease;
+        /* สร้างเอฟเฟกต์เลื่อน */
+    }
+
+    .main-sidebar.open {
+        width: 100%;
+        height: auto;
+        z-index: 10000;
+        /* เมื่อเปิด ให้เลื่อนลงมาที่ด้านบนของหน้าจอ */
+    }
+
+
+    .main-container {
+        margin-top: 50px;
+        width: 100%;
+        /* Ensure full width */
+        box-sizing: border-box;
+        /* Include padding in the element's width */
+        background-color: #f9f9f9;
+        /* Light background for better visibility */
+        z-index: 500;
+        overflow-x: auto;
+    }
+
+
+    .togglebtn {
+
+        z-index: 2000;
+        cursor: pointer;
+
+    }
+
+    .brand {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .brand button {
+        display: block;
+    }
+
+
+
+}

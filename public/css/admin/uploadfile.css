@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background: url('img/NatureGIF.gif') no-repeat center center; */
+    background-size: cover;
+    margin: auto;
+}
+
+.container {
+
+    background: #ffffff;
+    /* ลบการเว้นช่องว่างด้านบน */
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    /* จัดตำแหน่งตรงกลางแนวนอน */
+    align-items: flex-start;
+    /* จัดตำแหน่งด้านบนของคอนเทนเนอร์ */
+    text-align: center;
+    box-sizing: border-box;
+    /* รวม padding กับขนาด width/height เพื่อไม่ให้ขยายเกิน */
+    min-height: 100vh;
+    /* ให้ container มีความสูงเต็มหน้าจอ */
+
+}
+
+
+
+form {
+    background: #ffffff;
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* จัดตำแหน่งตรงกลางแนวนอน */
+    align-items: center;
+    /* จัดตำแหน่งด้านบนของคอนเทนเนอร์ */
+    text-align: center;
+    box-sizing: border-box;
+    /* รวม padding กับขนาด width/height เพื่อไม่ให้ขยายเกิน */
+    /* ให้ container มีความสูงเต็มหน้าจอ */
+
+
+}
+
+.importfile {
+
+    background: #fff;
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 370px;
+    height: 310px;
+    margin-bottom: 20px;
+
+}
+
+.showdata {
+    display: none;
+    display: flex;
+    /* border: #434190 1px solid; */
+    height: 100%;
+    padding: 10px;
+
+    align-items: center;
+    /* จัดปุ่มไปทางซ้าย */
+}
+
+
+
+.preview{
+
+    padding: 10px;
+    width:110em;
+    height: 100%;
+
+
+
+}
+
+
+#submitBtn {
+    margin-left: 0;
+    padding: 10px 20px;
+   
+
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #5a5a5a;
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+
+}
+
+button:hover {
+    background-color: #434190;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #46da4b;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* รวมเส้นขอบตาราง */
+    margin: 20px 0;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #f2f2f2;
+    /* พื้นหลังหัวตาราง */
+    color: #333;
+    /* สีตัวอักษร */
+    font-weight: bold;
+    padding: 12px 15px;
+    border-bottom: 2px solid #ddd;
+    /* เส้นขอบด้านล่าง */
+}
+
+table tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    /* เส้นขอบระหว่างแถว */
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+    /* สีพื้นหลังแถวที่เป็นคู่ */
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    /* สีพื้นหลังเมื่อเมาส์ชี้ที่แถว */
+}

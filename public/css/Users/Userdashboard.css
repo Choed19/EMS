@@ -1,0 +1,112 @@
+body {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* ป้องกันการเลื่อนในแนวนอน */
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.Bluebox, .Yellowbox, .Greenbox, .redbox, .greybox {
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: column; /* จัด icon ให้อยู่ตรงกลาง */
+}
+
+.Bluebox {
+    background-color: #0099ff;
+}
+
+.Yellowbox {
+    background-color: #e9d06b;
+}
+
+.Greenbox {
+    background-color: #58d68d;
+}
+
+.redbox {
+    background-color: #ec7063;
+}
+
+.greybox {
+    background-color: #9b59b6;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    font-size: 14px;
+    margin-top: 10px; /* เพิ่มระยะห่างระหว่างไอคอนกับข้อความ */
+}
+
+.effect1:hover {
+    box-shadow: 0 0 10px #0099ff, 0 0 20px #0099ff inset;
+}
+
+.effect2:hover {
+    box-shadow: 0 0 10px #f7dc6f, 0 0 20px #f7dc6f inset;
+}
+
+.effect3:hover {
+    box-shadow: 0 0 10px #58d68d, 0 0 20px #58d68d inset;
+}
+
+.effect4:hover {
+    box-shadow: 0 0 10px #ec7063, 0 0 20px #ec7063 inset;
+}
+
+.effect5:hover {
+    box-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6 inset;
+}
+
+/* ปรับขนาดให้พอดีจอมือถือ */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .Bluebox, .Yellowbox, .Greenbox, .redbox, .greybox {
+        width: 100%; /* ปรับให้กล่องกว้างเต็มหน้าจอ */
+        max-width: 350px; /* ขนาดสูงสุดในมือถือ */
+        height: 80px; /* ลดความสูงลงในมือถือ */
+    }
+
+    .icon {
+        width: 40px; /* ปรับขนาดไอคอนในมือถือ */
+        height: 40px;
+    }
+
+    .text {
+        font-size: 12px; /* ลดขนาดฟอนต์ในมือถือ */
+    }
+}

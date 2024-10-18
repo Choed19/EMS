@@ -1,0 +1,106 @@
+/* ฟอนต์ Prompt สำหรับทั้งเว็บ */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left ;
+    text-align: 20px;
+}
+
+/* สไตล์ของ input ค้นหา */
+.searchborrw {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* สไตล์ของตาราง */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    background-color: #edea45;
+    color: white;
+    font-weight: 600;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+th, td {
+    white-space: nowrap;
+}
+
+/* สไตล์คอลัมน์ */
+.colum th {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.table tbody td {
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .searchborrw {
+        max-width: 100%;
+    }
+}

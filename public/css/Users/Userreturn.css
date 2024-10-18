@@ -1,0 +1,126 @@
+body {
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.container {
+    max-width: 95%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#searchInput {
+    width: 200px;
+}
+#categorySelect {
+    width: 160px; /* กำหนดขนาดของ select */
+    height: 35px;
+    margin-right: 10px;
+    text-align: left;
+}
+.select {
+    text-align: left;
+}
+.form-label me-2 {
+    font-size: 20px;
+}
+h2 {
+    margin-top: 25px;
+    color: #000000;
+    text-align: left;
+}
+table.dataTable thead th {
+    background-color: #28b463;
+    color: white;
+    font-size: 18px;
+}
+table.dataTable tbody td {
+    font-size: 16px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 0.75rem;
+    margin-left: 2px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #0099ff !important;
+    color: white !important;
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5rem;
+    display: inline-block;
+    width: 250px;
+}
+.form-select {
+    width: 250px;
+}
+.topic {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topic img {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .dataTables_wrapper .dataTables_filter input,
+    .form-select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+.btn-custom-selected {
+    background-color: red;
+    color: white;
+}
+/* ปรับแต่ง CSS ให้ Popup แสดงผลดีบนมือถือ */
+.modal-dialog {
+    max-width: 100%; /* ให้ใช้พื้นที่หน้าจอเต็มที่ */
+    margin: 10px; /* เพิ่มระยะขอบเพื่อไม่ให้ติดขอบจอ */
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+    max-height: calc(100vh - 40px); /* ให้สูงสุดไม่เกินหน้าจอ */
+    overflow-y: auto; /* เพิ่ม scroll ถ้าเนื้อหาเกินความสูง */
+}
+
+/* ปรับแต่งให้ใช้งานได้ดีบนหน้าจอขนาดเล็ก (มือถือ) */
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 5px;
+    }
+    .modal-content {
+        padding: 10px;
+    }
+
+    .modal-header h5 {
+        font-size: 16px; /* ปรับขนาดหัวข้อ */
+    }
+
+    .modal-body table {
+        font-size: 14px; /* ปรับขนาดตัวหนังสือในตาราง */
+    }
+
+    .modal-footer {
+        flex-direction: column; /* จัดเรียงปุ่มในแนวตั้ง */
+    }
+
+    .modal-footer button {
+        width: 100%; /* ให้ปุ่มยาวเต็มความกว้าง */
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,172 @@
+.container{
+ 
+    width: 100%; /* Make the container full width */
+   /* Set a maximum width for larger screens */
+    margin: 0 ; /* Center the container */
+  /* Add padding inside the container */
+    display: flex; /* Enable flexbox for layout */
+    flex-direction: column; /* Arrange child elements in a column */
+    align-items: center; /* Center child elements horizontally */
+   
+}
+
+
+.row {
+    display: flex;
+    width: 100em;
+    justify-content: space-between;
+
+    /* background-color: black; */
+    /* จัดตำแหน่งตรงกลางในแนวนอน */
+}
+
+.small-box {
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* เพิ่มเส้นขอบเบา ๆ */
+    border-radius: 10px;
+    width: 17em;
+    height: 10em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    /* จัดตำแหน่งตรงกลางในแนวนอน */
+    align-items: center;
+    /* จัดตำแหน่งตรงกลางในแนวตั้ง */
+    /* กำหนดความสูงของ container */
+    position: relative;
+    overflow: hidden;
+
+}
+
+.small-box .inner {
+    padding: 10px;
+    /* เพิ่ม padding ภายใน */
+}
+
+.small-box .icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+    /* ขนาดของไอคอน */
+    color: #fff;
+    /* สีของไอคอน */
+}
+
+p {
+    font-size: 28px;
+    /* border: 1px red solid; */
+}
+
+.icon {
+    height: 5px;
+    width: 50px;
+    /* border: 1px red solid; */
+    /* margin-right: -20px; */
+}
+
+.small-box-footer {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    /* เพิ่มพื้นหลังบางส่วน */
+    color: #fff;
+    /* สีของข้อความ */
+    text-decoration: none;
+    /* ลบขีดเส้นใต้ */
+
+
+}
+
+.small-box-footer:hover {
+    color: black;
+}
+
+
+
+#box1 {
+    background: linear-gradient(45deg, #5e9e0b, #dafc1e);
+    color: #fff;
+    /* ปรับสีข้อความให้เห็นชัดขึ้นบนพื้นหลังที่มีการไล่สี */
+}
+
+#box2 {
+    background: linear-gradient(45deg, #26067e, #cf69e9);
+    color: #fff;
+    /* ปรับสีข้อความให้เห็นชัดขึ้นบนพื้นหลังที่มีการไล่สี */
+}
+
+#box3 {
+    background: linear-gradient(45deg, #fa0800, #dfb707);
+    color: #fff;
+    /* ปรับสีข้อความให้เห็นชัดขึ้นบนพื้นหลังที่มีการไล่สี */
+}
+
+#box4 {
+    background: linear-gradient(45deg, #d8b800, #e3f540);
+    color: #fff;
+    /* ปรับสีข้อความให้เห็นชัดขึ้นบนพื้นหลังที่มีการไล่สี */
+}
+
+
+
+.chart{
+    width: 1600px;
+    height: 600px;
+   /* Limit the maximum width of the chart container */
+    margin: 0 ;   
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important; /* You can adjust this based on your preference */
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0;
+        display: flex;
+        justify-items: center;
+
+        width: 100%; /* Make it responsive */
+    }
+
+    .row {
+        width: 100%; /* Ensure it takes full width on small screens */
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-box {
+        width: 100%; /* Make the box take the full width of the screen */
+        max-width: 380px; /* Prevent the box from becoming too large */
+        margin-bottom: 20px;
+        height: 140px; /* Allow height to adjust based on content */
+    }
+
+    .small-box .inner h3,
+    .small-box .inner p {
+        text-align: center;
+    }
+
+    .small-box-footer {
+        text-align: center;
+    }
+
+    .chart {
+        display: none; /* Hide charts on smaller screens */
+    }
+}
+

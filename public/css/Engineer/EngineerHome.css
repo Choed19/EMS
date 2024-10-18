@@ -1,0 +1,91 @@
+body{
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.a{
+    font-size: 18px;
+}
+.navbar {
+    background-color: #343a40; /* สีพื้นหลัง */
+    padding: 15px; /* ระยะห่าง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+.navbar-brand {
+    color: #ffffff; /* สีตัวอักษร */
+    font-family: 'Prompt', sans-serif; /* ฟอนต์ */
+    font-weight: 600; /* น้ำหนักตัวอักษร */
+    font-size: 20px; /* ขนาดตัวอักษร */
+}
+
+.navbar-brand:hover {
+    color: #ffc107; /* สีเมื่อ hover */
+}
+
+/* ปรับแต่ง Profile dropdown */
+.nav-item .nav-link {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .nav-link strong {
+    margin-left: 10px;
+    color: #ffffff; /* สีตัวอักษรชื่อผู้ใช้ */
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #343a40;
+    font-family: 'Prompt', sans-serif;
+}
+
+.dropdown-item:hover {
+    background-color: #ffc107;
+    color: #ffffff;
+}
+
+.dropdown-item i {
+    margin-right: 8px;
+}
+
+/* ปรับแต่ง Iframe Container */
+.iframe-container {
+    width: 100%;
+    height: calc(100vh - 56px); /* 56px คือความสูงของ Navbar */
+    box-sizing: border-box;
+}
+
+iframe {
+    border: none;
+}
+
+/* ปรับแต่งปุ่ม logout */
+#logout-form {
+    display: inline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .nav-item .nav-link strong {
+        font-size: 16px;
+    }
+}

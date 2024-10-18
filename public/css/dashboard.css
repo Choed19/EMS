@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    border: 2px rgb(255, 255, 255) solid;
+    transition: margin-left 0.5s;
+    border-bottom: 1px rgb(104, 102, 102) solid;
+}
+
+.togglebtn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.togglebtn:hover {
+    background-color: #444;
+}
+
+.main-sidebar {
+    
+    width: 0;
+    transition: width 0.5s;
+    overflow: hidden; /* ซ่อนเนื้อหาที่เกินจากขอบของ sidebar */
+    position: fixed; /* ทำให้ sidebar ติดขอบซ้าย */
+    height: 100%; /* ให้สูงเต็มความสูงของหน้าจอ */
+    background-color: #343a40; /* สีพื้นหลังของ sidebar */
+    z-index: 1000; /* ทำให้ sidebar อยู่เหนือเนื้อหาอื่น */
+    
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.main-container {
+    background-color: #ffffff;
+    width: auto; /* ลดขนาดของ main-container ให้พอดีกับความกว้างของหน้าจอ */
+    height: 920px; /* เปลี่ยนเป็น px หรือ % ตามความเหมาะสม */
+    border: 2px rgb(255, 255, 255) solid;
+    padding: 20px;
+    transition: margin-left 0.5s; /* เพิ่มการเคลื่อนไหวเมื่อขยับ */
+}
+
+/* เมื่อ sidebar เปิด */
+.main-sidebar.open {
+    width: 250px;
+}
+
+.main-container.expanded {
+    margin-left: 250px;
+}
+
+.row {
+    width: 100%;
+    border: 2px rgb(255, 255, 255) solid;
+    display: flex;
+    justify-content: center; /* จัดตรงกลางในแนวนอน */
+    align-items: center;
+    flex-wrap: wrap; /* จัดตรงกลางในแนวตั้ง */
+}
+
+.col-lg-3 {
+    display: flex; /* ให้กล่องภายในจัดเรียงในแนวตั้ง */
+    justify-content: center; /* จัดกล่องตรงกลางในแนวนอน */
+    align-items: center; /* จัดกล่องตรงกลางในแนวตั้ง */
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างกล่อง */
+}
+
+.small-box {
+    /* border: 5px rgb(255, 255, 255) solid; */
+    width: 100%; /* ทำให้กล่องขยายเต็มความกว้างของคอลัมน์ */
+    max-width: 370px; /* กำหนดขนาดสูงสุด */
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .row{
+       
+    }
+
+    .small-box{margin-top:-30px ;
+    }
+}

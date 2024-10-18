@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ที่โหลดจาก Google Fonts */
+    background-color: #f9f9f9; /* สีพื้นหลังที่สดใส */
+    color: #333; /* สีข้อความ */
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #007bff; 
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.table {
+    border-radius: 8px; /* มุมมนสำหรับตาราง */
+    overflow: hidden; 
+}
+
+/* Table Header Styles */
+.table thead th {
+    background-color: #007bff; /* สีพื้นหลังของ th */
+    color: white; /* สีตัวอักษรของ th */
+    font-weight: bold; /* ตัวอักษรหนา */
+    text-align: center; /* จัดตำแหน่งข้อความไปกลาง */
+}
+
+/* Table Cell Styles */
+.table td {
+  
+
+    width: 80em;
+    padding: 12px; /* ขนาดการเว้นระยะในเซลล์ */
+    text-align: left; /* จัดข้อความให้ชิดซ้าย */
+    border: 1px solid #dee2e6; /* เส้นขอบของเซลล์ */
+    background-color: #ffffff; /* สีพื้นหลังของเซลล์ */
+    /* display: flexbox;
+    justify-content: center;
+    align-items: center; */
+}
+
+.table td select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* เพิ่มสีพื้นหลังและการแสดงผลเมื่อเมาส์วาง */
+.table tbody tr:hover {
+    background-color: #d1e7dd; /* สีพื้นหลังเมื่อเมาส์วางอยู่บนแถว */
+}
+
+/* ปรับการแสดงผลของปุ่ม */
+.btn-primary {
+    background-color: #007bff; /* สีพื้นหลังของปุ่ม */
+    border: none; /* ไม่แสดงเส้นขอบ */
+    padding: 10px 20px; /* เพิ่มพื้นที่ภายในปุ่ม */
+    color: white; /* สีตัวอักษรของปุ่ม */
+    border-radius: 5px; /* มุมมน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+    transition: background-color 0.3s; /* เพิ่มเอฟเฟกต์การเปลี่ยนสีพื้นหลัง */
+    
+}
+.table tbody tr {
+    transition: background-color 0.3s, transform 0.3s; /* แอนิเมชันสำหรับการเปลี่ยนแปลงสีพื้นหลังและการขยาย */
+}
+
+
+.btn-primary:hover {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อ hover ปุ่ม */
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+.form-group{
+    text-align: center;
+}
+
+th.plus, td.plus {
+    display: none; /* ซ่อนทั้งเซลล์หัวข้อและเนื้อหาของคอลัมน์ที่มี class "plus" */
+}
+/* Responsive Adjustments for Table Cells */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    th.plus, td.plus {
+        display: table-cell; /* แสดงคอลัมน์เมื่ออยู่ในหน้าจอขนาดเล็ก */
+    }
+
+    .btn-primary {
+        width: 100%; /* ปุ่มจะเต็มความกว้าง */
+        margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+    }
+    table.dataTable tbody td,
+    table.dataTable tbody th {
+        vertical-align: middle; /* จัดให้ข้อมูลอยู่ตรงกลางในแนวตั้ง */
+    }
+    /* จัดให้ข้อมูลภายในแถวขยายอยู่กลางแนวนอน */
+    tr.child td {
+        text-align: center; /* จัดข้อมูลที่ซ่อนไว้อยู่กลางแนวนอน */
+    }
+    
+    /* จัดการปุ่มและข้อมูลในแถวขยายให้อยู่ตรงกลาง */
+    
+}

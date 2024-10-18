@@ -1,0 +1,86 @@
+/* กำหนดฟ้อนต์หลักให้เป็น Prompt */
+
+/* สไตล์หัวเรื่อง */
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40;
+}
+
+
+
+/* สไตล์ป้ายกำกับ */
+.form-group label {
+    display: block;
+    /* margin-bottom: 8px;
+    font-weight: 500; */
+    color: #495057;
+}
+
+/* สไตล์อินพุต */
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+/* สไตล์รูปภาพโปรไฟล์ */
+#profile_image_preview {
+    display: block;
+    margin: 10px auto 15px auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #dee2e6;
+}
+
+/* การจัดวางปุ่ม */
+.d-flex {
+    flex-wrap: wrap;
+}
+
+.d-flex .btn {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+}
+
+/* สไตล์ปุ่มแก้ไข */
+#editBtn {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    color: #212529;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#editBtn:hover {
+    background-color: #e0a800;
+}
+
+/* สไตล์ปุ่มบันทึก */
+#saveBtn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    display: none; /* ซ่อนปุ่มบันทึกก่อนการแก้ไข */
+    transition: background-color 0.3s;
+}
+
+#saveBtn:hover {
+    background-color: #218838;
+}

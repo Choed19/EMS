@@ -1,0 +1,79 @@
+body {
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.container {
+    max-width: 95%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#searchInput {
+    width: 200px;
+}
+#categorySelect {
+    width: 160px; /* กำหนดขนาดของ select */
+    height: 35px;
+    margin-right: 10px;
+    text-align: left;
+}
+.select {
+    text-align: left;
+}
+.form-label me-2 {
+    font-size: 20px;
+}
+h2 {
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: left;
+}
+table.dataTable thead th {
+    background-color: #2e86c1;
+    color: white;
+    font-size: 18px;
+}
+table.dataTable tbody td {
+    font-size: 16px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 0.75rem;
+    margin-left: 2px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #0099ff !important;
+    color: white !important;
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5rem;
+    display: inline-block;
+    width: 250px;
+}
+.form-select {
+    width: 250px;
+}
+.topic {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topic img {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .dataTables_wrapper .dataTables_filter input,
+    .form-select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

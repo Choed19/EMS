@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+  
+    color: white;
+    background: #ef4787 ;
+    text-align: center;
+    border: 1px solid #b0b0b0;
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+    font-size: 20px;
+}
+.form-group {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between; /* กระจาย label และข้อความให้ห่างกัน */
+    align-items: center; /* จัดตำแหน่งให้อยู่แนวกลาง */
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่าง label และข้อความ */
+    min-width: 120px; /* กำหนดความกว้างขั้นต่ำให้ label */
+}
+
+.form-group p {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* ให้ข้อความยืดตามพื้นที่ที่เหลือ */
+    text-align: left;
+}
+
+
+/* .form-control{
+    width: 30ch;
+    height: 50px;
+} */
+ .Confirm{
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #DE3163  ;
+ }
+
+
+.inputnote {
+    width: 100%; 
+    padding: 8px;
+    box-sizing: border-box; 
+}
+textarea.inputnote {
+    width: 100%; /* ให้ช่องกรอกข้อความเต็มความกว้างของกล่อง */
+    padding: 8px; /* เพิ่ม padding เพื่อความสวยงาม */
+    border: 1px solid #ccc; /* ขอบช่องข้อความ */
+    border-radius: 4px; /* มุมโค้งมน */
+    box-sizing: border-box; /* ให้ขนาดครอบคลุม padding */
+    resize: vertical; /* อนุญาตให้ปรับขนาดความสูงได้เท่านั้น */
+    overflow-wrap: break-word; /* ขึ้นบรรทัดใหม่เมื่อข้อความยาว */
+    white-space: pre-wrap; /* ขึ้นบรรทัดใหม่อัตโนมัติ */
+}
